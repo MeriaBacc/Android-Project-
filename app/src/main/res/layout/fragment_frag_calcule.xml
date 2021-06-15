@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag_calcule">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:shrinkColumns="0"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#4CAF50"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ACTIF"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#4CAF50"
+                android:gravity="center"
+                android:text="PASSIF"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#CDDC39"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ACTIF IMMOBILISE"
+                android:textColor="#100F0F"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#CDDC39"
+                android:gravity="center"
+                android:text="CAPITEAUX PROPRES"
+                android:textColor="#121111"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="68dp">
+
+            <EditText
+                android:id="@+id/iicor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Immobilisation Incorporelles"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/cp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Capiteaux Propres"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/ic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Immobilisation Corporelles"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/exerc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Resultat de l'exercice"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/ifinancier"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Immobilisation financières"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#CDDC39"
+                android:gravity="center"
+                android:text="DETTES"
+                android:textColor="#131313"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#CDDC39"
+                android:gravity="center"
+                android:text="ACTIF CIRCULANT"
+                android:textColor="#090909"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/dettesfin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Dettes financières"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/stock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Stocks"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/dettesexp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Dettes d'exploitation"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/creance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Créances"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/dettessurimm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Dettes sur immobilisation"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/disponibilite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Disponibilités"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/autresdettes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Autres dettes"
+                android:textSize="14sp"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="378dp"
+            android:layout_height="68dp">
+
+            <Button
+                android:id="@+id/btnbilan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EDECE7"
+                android:text="Totale du bilan"
+                android:textColor="#090909"
+                app:backgroundTint="#CDDC39" />
+
+            <TextView
+                android:id="@+id/totalebilan"
+                android:layout_width="146dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textAlignment="center"
+                android:textColor="#1B1A1A"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+</FrameLayout>

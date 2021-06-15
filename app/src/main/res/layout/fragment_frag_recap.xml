@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag_recap">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDECE7">
+
+
+        <Button
+            android:id="@+id/voir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginTop="24dp"
+            android:background="#FFFFFF"
+            android:text="Interpréter Votre Bilan"
+            android:textColor="#EDECE7"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFEF9"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:padding="10dp"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/voir"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:padding="10dp"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/t1"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:padding="10dp"
+            android:textColor="#307333"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/t2"
+            tools:layout_editor_absoluteX="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
